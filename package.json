@@ -17,7 +17,12 @@
     }
     , "dependencies": {
           "ee-types"                    : "2.x"
+        , "ee-log"                      : "0.3.x"
         , "distributed-prototype"       : "2.x"
+        , "envr"                        : "1.x"
+        , "infect-service"              : "git@github.com:infect-org/infect-service.git"
+        , "frontend"                    : "git@github.com:infect-org/frontend.git"
+        , "prmissions-service"          : "git@github.com:distributed-systems/permissions-service.git"
     }
     , "devDependencies": {
           "mocha"                       : "3.x"

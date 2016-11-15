@@ -6,13 +6,19 @@
 	const distributed 		= require('distributed-prototype');
 	const Website 			= require('frontend');
 	const InfectService 	= require('infect-service');
+	const log 			 	= require('ee-log');
 
 
 
 	module.exports = class Application {
 
 
-		constructor() {
+		constructor(config) {
+
+			this.config = config;
+
+
+
 
 			// service host
 			this.services = new distributed.ServiceManager();
@@ -33,7 +39,7 @@
 
 
 			// datasource
-			this.services.registerService(new InfectService());
+			this.services.registerService(new InfectService(config));
 
 
 			// go
