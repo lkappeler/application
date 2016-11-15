@@ -1,0 +1,27 @@
+(function() {
+    'use strict';
+
+    try {
+        // try to load the config from the parent directory
+        // this is used on autodeploy systems
+        module.exports = require('../config.js');
+    } catch(e) {
+
+        // default
+        module.exports = {
+            db: {
+                  type      : 'postgres'
+                , schema    : 'infect'
+                , database  : 'infect'
+                , hosts: [{
+                      host           : '10.80.100.1'
+                    , username       : 'postgres'
+                    , password       : ''
+                    , port           : 5432
+                    , pools          : ['read', 'write']
+                    , maxConnections : 5
+                }]
+            }
+        };
+    }
+})();
