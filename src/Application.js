@@ -1,4 +1,4 @@
-(function() {
+{
 	'use strict';
 
 
@@ -14,10 +14,7 @@
 
 
 		constructor(config) {
-
 			this.config = config;
-
-
 
 
 			// service host
@@ -44,8 +41,10 @@
 
 			// go
 			this.services.load().then(() => {
-				console.log('INFECT is running!'.blue.bold);
+				console.log('INFECT loaded\n'.blue.bold);
+				console.log('API Gateway'.cyan.bold+'  '.grey+'http://infect.l.dns.porn:8000'.white);
+				console.log('WWW'.cyan.bold+'          '.grey+'http://infect.l.dns.porn:9000'.white);
 			}).catch(log);
 		}
 	};
-})();
+}

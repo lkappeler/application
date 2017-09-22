@@ -1,33 +1,36 @@
 {
-      "name"                            : "aplication"
-    , "description"                     : "infect application"
-    , "version"                         : "0.1.0"
-    , "homepage"                        : "https://github.com/infect/application"
-    , "author"                          : "Michael van der Weg <michael@joinbox.com> (http://infect.info/)"
-    , "license"                         : "MIT"
-    , "repository": {
-          "url"                         : "https://github.com/infect/related.git"
-        , "type"                        : "git"
-    }
-    , "engines": {
-        "node"                          : ">=6"
-    }
-    , "bugs": {
-        "url"                           : "https://github.com/infect/application/issues"
-    }
-    , "dependencies": {
-          "ee-types"                    : "2.x"
-        , "ee-log"                      : "0.3.x"
-        , "distributed-prototype"       : "2.x"
-        , "envr"                        : "1.x"
-        , "infect-service"              : "git@github.com:infect-org/infect-service.git"
-        , "frontend"                    : "git@github.com:infect-org/frontend.git"
-        , "prmissions-service"          : "git@github.com:distributed-systems/permissions-service.git"
-    }
-    , "devDependencies": {
-          "mocha"                       : "3.x"
-    }
-    , "optionalDependencies": {}
-    , "keywords"                        : ["infect"]
-    , "scripts"                         : {}
+    "name": "aplication",
+    "description": "infect application",
+    "version": "0.1.0",
+    "homepage": "https://github.com/infect/application",
+    "author": "Michael van der Weg <michael@joinbox.com> (http://infect.info/)",
+    "license": "MIT",
+    "repository": {
+        "url": "https://github.com/infect/related.git",
+        "type": "git"
+    },
+    "engines": {
+        "node": ">=8"
+    },
+    "bugs": {
+        "url": "https://github.com/infect/application/issues"
+    },
+    "dependencies": {
+        "distributed-prototype": "^2.28.1",
+        "ee-log": "^2.0.4",
+        "ee-types": "^2.1.4",
+        "envr": "^1.0.0",
+        "frontend": "git+ssh://git@github.com/infect-org/frontend.git",
+        "infect-service": "git+ssh://git@github.com/infect-org/infect-service.git",
+        "permissions-service": "git+ssh://git@github.com/distributed-systems/permissions-service.git",
+        "prmissions-service": "git@github.com:distributed-systems/permissions-service.git"
+    },
+    "devDependencies": {
+        "mocha": "^3.5.0"
+    },
+    "optionalDependencies": {},
+    "keywords": [
+        "infect"
+    ],
+    "scripts": {}
 }
